@@ -1,0 +1,35 @@
+@import "src/styles/color";
+@import "src/styles/settings";
+
+
+svg.material-icons {
+  height: 24px;
+  width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card svg.material-icons path {
+  fill: #888;
+}
+
+mat-sidenav-container {
+  //background: $color_third;
+  border: none !important;
+  font-family: $default-font-family;
+}
+
+.spacer {
+  flex: 1;
+}
+
+
+mat-sidenav-content {
+  padding: 20px;
+}
+
+.menu {
+  width: 250px;
+}

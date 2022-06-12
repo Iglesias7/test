@@ -1,0 +1,55 @@
+@import "src/styles/color";
+@import "src/styles/settings";
+
+mat-toolbar {
+  color: white;
+  font-family: $default-font-family;
+
+  .header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    padding-top: 1%;
+    background-color: $color_first;
+    position: fixed;
+    z-index: 1;
+  }
+  .subheader {
+    min-height: 46px !important;
+    height: 46px !important;
+    width: 100%;
+    display: flex;
+    background-color: $color_second;
+    font-family: $default-font-family !important;
+  }
+  .mat-toolbar-back {
+    width: 3.2rem;
+  }
+
+  .app-menu-link {
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+}
+
+.left {
+  position: absolute;
+  top: 0.2rem;
+  right: 8.5rem;
+  z-index: 1999;
+}
+
+mat-toolbar-row {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 15px !important;
+}
+
+mat-icon {
+  vertical-align: text-bottom;
+}
+
+::ng-deep .app-menu-link {
+  color: white !important;
+}

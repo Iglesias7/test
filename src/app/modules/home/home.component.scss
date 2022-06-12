@@ -1,0 +1,42 @@
+@import "src/styles/color";
+@import "src/styles/settings";
+
+.body {
+  @include flex-center-align;
+  margin: 20px auto 20px auto;
+  align-items: flex-start;
+}
+
+mat-card {
+  width: 45%;
+  margin: 20px;
+  border: 1px solid grey;
+  padding: 0;
+
+  mat-card-title {
+    background-color: lightgrey;
+    margin: 0;
+    border-bottom: 1px solid grey;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  mat-card-content {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+form {
+  color: $color_first;
+}
+
+.icon {
+  color: $color_first;
+}
+
+form mat-form-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
