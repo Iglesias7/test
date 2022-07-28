@@ -40,6 +40,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {ButtonComponent} from "./button/button.component";
 import {NgApexchartsModule} from "ng-apexcharts";
+import {MAT_BOTTOM_SHEET_DEFAULT_OPTIONS, MatBottomSheetModule} from "@angular/material/bottom-sheet";
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import {NgApexchartsModule} from "ng-apexcharts";
     MatSidenavModule,
     MatSelectModule,
     MatCardModule,
+    MatBottomSheetModule,
     MatMenuModule,
     MatListModule,
     MatTooltipModule,
@@ -90,6 +92,7 @@ import {NgApexchartsModule} from "ng-apexcharts";
   ],
   exports: [
     CommonModule,
+    MatBottomSheetModule,
     MatButtonModule,
     MatCheckboxModule,
     MatFormFieldModule,
@@ -133,7 +136,8 @@ import {NgApexchartsModule} from "ng-apexcharts";
 
   ],
   providers: [
-    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 5000 } }
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 5000 } },
+    {provide: MAT_BOTTOM_SHEET_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
   ]
 })
 export class WidgetModule {}

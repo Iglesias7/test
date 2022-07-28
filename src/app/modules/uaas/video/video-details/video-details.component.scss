@@ -1,0 +1,74 @@
+mat-nav-list {
+  background-color: black;
+  color: white;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 750px;
+  height: 1500px;
+
+  a {
+    color: white;
+  }
+}
+
+::ng-deep .mat-bottom-sheet-container::-webkit-scrollbar {
+  display: none;
+}
+
+::ng-deep .mat-bottom-sheet-container{
+  padding: 0 !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overflow-y: scroll !important;
+}
+
+.volume {
+  position: absolute;
+  top: 390px;
+  cursor: pointer;
+  right: 12px;
+}
+
+.delete {
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+  right: 12px;
+}
+
+.serie {
+  position: absolute;
+  top: -20px;
+  background-color: darkred;
+  padding: 1px;
+  color: #828b9c;
+  font-weight: lighter;
+  font-size: 15px;
+  left: 12px;
+}
+
+.title {
+  position: absolute;
+  top: 280px;
+  font-weight: bolder;
+  font-size: 35px;
+  left: 12px;
+}
+
+.third {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 365px;
+  left: 12px;
+
+  mat-icon {
+    margin: 8px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+}

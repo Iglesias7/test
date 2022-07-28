@@ -19,6 +19,11 @@ import {StudentsComponent} from "./students/students.component";
 import {StudentComponent} from "./students/student/student.component";
 import {UaaComponent} from "./uaas/uaa/uaa.component";
 import {UaasComponent} from "./uaas/uaas.component";
+import {UpdateShoolComponent} from "./shool/update-shool/update-shool.component";
+import {VideoComponent} from "./uaas/video/video.component";
+import {VideoDetailsComponent} from "./uaas/video/video-details/video-details.component";
+import {MAT_SNACK_BAR_DEFAULT_OPTIONS} from "@angular/material/snack-bar";
+import {MAT_BOTTOM_SHEET_DATA, MatBottomSheet} from "@angular/material/bottom-sheet";
 
 @NgModule({
   declarations: [
@@ -34,7 +39,10 @@ import {UaasComponent} from "./uaas/uaas.component";
     StudentsComponent,
     StudentComponent,
     UaaComponent,
-    UaasComponent
+    UaasComponent,
+    VideoComponent,
+    UpdateShoolComponent,
+    VideoDetailsComponent
   ],
   imports: [
     HomeRoutingModule,
@@ -48,7 +56,12 @@ import {UaasComponent} from "./uaas/uaas.component";
 
   ],
   entryComponents: [
-
+    UpdateShoolComponent,
+    VideoDetailsComponent
+  ],
+  providers: [
+    // { provide: MatBottomSheet, useValue: {} },
+    // { provide: MAT_BOTTOM_SHEET_DATA, useValue: {} }
   ]
 })
 export class HomeModule { }

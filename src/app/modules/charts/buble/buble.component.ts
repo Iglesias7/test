@@ -28,7 +28,7 @@ export type ChartOptions = {
 @Component({
   selector: "app-buble",
   templateUrl: "./buble.component.html",
-  styleUrls: ["./buble.component.css"]
+  styleUrls: ["./buble.component.scss"]
 })
 export class BubleComponent {
   @ViewChild("chart") chart: ChartComponent | any;
