@@ -7,7 +7,6 @@ import {StudentsComponent} from "./students/students.component";
 import {UaasComponent} from "./uaas/uaas.component";
 
 const routes: Routes = [
-
   { path: '', component: HomeComponent , data: { title: 'PAGE_TITLES.HOME' }},
   { path: 'home', component: HomeComponent , data: { title: 'PAGE_TITLES.TABLEAU_DE_BORD' }},
   { path: 'shools', component: ShoolsComponent, canActivate: [AuthGuardService], data: { title: 'PAGE_TITLES.SHOOL' }},
